@@ -15,3 +15,10 @@ steps:
     link: '{{ repoUrl }}'
     actions:
       - type: closeIssue
+  - title: Second Step
+    actions:
+      - type: createIssue
+        title: A new second issue
+        body: a-response-file.md
+    description: the description of 2nd step
+    event: issues.closed
